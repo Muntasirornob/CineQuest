@@ -4,9 +4,9 @@ import { useEffect, useState } from "react"
 import { Card } from "../Card"
 import { useFetch } from "../../hooks/useFetch";
 
- export const MovieList = () => {
+ export const MovieList = ({apiPath}) => {
 
-  const {data:movies} = useFetch("https://api.themoviedb.org/3/movie/popular?api_key=a829b171a6b7de1d77ee3bfa8d0c6fab");
+  const {data:movies} = useFetch(apiPath);
 
 
 
