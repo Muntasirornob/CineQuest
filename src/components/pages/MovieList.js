@@ -9,8 +9,6 @@ import { useFetch } from "../../hooks/useFetch";
   const {data:movies} = useFetch(apiPath);
 
 
-
-
    return (
      <main>
          <section className="max-w-7xl mx-auto py-7">
